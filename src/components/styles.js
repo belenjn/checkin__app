@@ -45,9 +45,36 @@ export const styles = StyleSheet.create({
   
     },
     formView: {
-        backgroundColor: "#333333",
-        borderWidth: 2,
-        borderColor: "red",
+        flexDirection: "row",
+        justifyContent: "center",
+        alignSelf: "center",
      
+    },
+    formTitle: {
+        color: "white",
+        fontWeight: "700",
+        alignSelf: "center",
+        marginLeft: -200,
+        marginBottom: 15,
+    },
+    formInput: {
+        borderBottomWidth: 2,
+        borderBottomColor: "#BEAD8E",
+        alignSelf: "center",
+        paddingBottom: 10,
+        width: 330,
+    },
+    buttonCheckIn: {
+        borderWidth: 0,
+        backgroundColor: "#BEAD8E",
+        color: "#FFFFFF",
+        textAlign: "center",
+        fontWeight: "700",
+        letterSpacing: 2.8,
+        padding: 20,
+        marginLeft: 70,
+        marginLeft: 70,
+        width: 250,
+        height: 60
     }
   });

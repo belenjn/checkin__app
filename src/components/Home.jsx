@@ -10,9 +10,7 @@ import {
 } from "react-native";
 import { styles } from "./styles";
 
-
 export const Home = () => {
-
   return (
     <View>
       <View style={styles.navbar}>
@@ -30,57 +28,18 @@ export const Home = () => {
       </View>
       <View style={styles.containerDarker}></View>
       <View style={styles.container}>
-        <View
-          style={{
-            flexDirection: "row",
-            justifyContent: "center",
-            alignSelf: "center",
-          }}
-        >
+        <View style={styles.formView}>
           <View>
-            <Text
-              style={{
-                color: "white",
-                fontWeight: "700",
-                alignSelf: "center",
-                marginLeft: -200,
-                marginBottom: 15,
-              }}
-            >
-              Booking Reference
-            </Text>
+            <Text style={styles.formTitle}>Booking Reference</Text>
             <TextInput
-              style={{
-                borderBottomWidth: 2,
-                borderBottomColor: "#BEAD8E",
-                alignSelf: "center",
-                paddingBottom: 10,
-                width: 330,
-              }}
+              style={styles.formInput}
               placeholder="AAA0000"
               placeholderTextColor="#686868"
             ></TextInput>
           </View>
 
           <TouchableNativeFeedback>
-            <Text
-              style={{
-                borderWidth: 0,
-                backgroundColor: "#BEAD8E",
-                color: "#FFFFFF",
-                textAlign: "center",
-                fontWeight: "700",
-                letterSpacing: 2.8,
-                fontFamily: 'Archivo, sans-serif',
-                padding: 20,
-                marginLeft: 70,
-                marginLeft: 70,
-                width: 250,
-                height: 60
-              }}
-            >
-              CHECK IN
-            </Text>
+            <Text style={styles.buttonCheckIn}>CHECK IN</Text>
           </TouchableNativeFeedback>
         </View>
       </View>
