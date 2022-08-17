@@ -3,6 +3,7 @@ import { StyleSheet } from "react-native";
 
 
 export const styles = StyleSheet.create({
+  // Home styles
   containerDarker: {
     marginTop: Constants.statusBarHeight,
     backgroundColor: "#222222",
@@ -28,11 +29,11 @@ export const styles = StyleSheet.create({
     maxWidth: 900,
   },
   logo: {
-    height: "48%",
-    width: "45%",
+    height: "49%",
+    width: "35%",
     alignSelf: "center",
-    marginLeft: 5,
-    marginRight: 5
+    marginLeft: "5%",
+    marginRight: 10
   },
   button: {
     color: "black",
@@ -73,6 +74,19 @@ export const styles = StyleSheet.create({
     width: 250,
     height: 60,
   },
+  // Info styles
+  mainContainerInfo: {
+    borderColor: "white",
+    borderWidth: 1,
+    width: "70%",
+    height: "30%",
+    alignSelf: "center"
+  },
+  column: {
+    height: "20%",
+    borderColor: "white",
+    borderWidth: 1
+  }
 });
 
 
