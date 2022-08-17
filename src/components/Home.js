@@ -1,8 +1,6 @@
 import React from "react";
 import {
-  Button,
   Image,
-  StyleSheet,
   Text,
   TextInput,
   TouchableNativeFeedback,
@@ -12,6 +10,7 @@ import { styles } from "./styles";
 
 
 export const Home = () => {
+
   return (
     <View>
       <View style={styles.navbar}>
@@ -47,5 +46,3 @@ export const Home = () => {
     </View>
   );
 };
-
-// border: borderWidth borderColor

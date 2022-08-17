@@ -1,12 +1,8 @@
 import Constants from "expo-constants";
 import { StyleSheet } from "react-native";
 
+
 export const styles = StyleSheet.create({
-  mainContainer: {
-    justifyContent: "center",
-    maxWidth: "95%",
-    minWidth: 300
-  },
   containerDarker: {
     marginTop: Constants.statusBarHeight,
     backgroundColor: "#222222",
@@ -24,7 +20,7 @@ export const styles = StyleSheet.create({
     flexDirection: "row",
     position: "absolute",
     height: 120,
-    width: 900,
+    width: "90%",
     justifyContent: "left",
     alignSelf: "center",
     zIndex: 2,
@@ -32,11 +28,11 @@ export const styles = StyleSheet.create({
     maxWidth: 900,
   },
   logo: {
-    height: 100,
-    width: 250,
-    marginTop: 10,
-    marginRight: 50,
-    marginLeft: 10,
+    height: "48%",
+    width: "45%",
+    alignSelf: "center",
+    marginLeft: 5,
+    marginRight: 5
   },
   button: {
     color: "black",
@@ -48,7 +44,7 @@ export const styles = StyleSheet.create({
   formView: {
     flexDirection: "row",
     justifyContent: "center",
-    alignSelf: "center",
+    alignSelf: "center"
   },
   formTitle: {
     color: "white",
@@ -78,3 +74,6 @@ export const styles = StyleSheet.create({
     height: 60,
   },
 });
+
+
+// 20 20 0 20 padding
