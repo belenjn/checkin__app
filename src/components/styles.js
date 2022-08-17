@@ -43,6 +43,8 @@ export const styles = StyleSheet.create({
     marginRight: 50,
   },
   formView: {
+    display: "flex",
+    flexWrap: "wrap",
     flexDirection: "row",
     justifyContent: "center",
     alignSelf: "center"
@@ -59,6 +61,9 @@ export const styles = StyleSheet.create({
     borderBottomColor: "#BEAD8E",
     alignSelf: "center",
     paddingBottom: 10,
+    marginBottom: 50,
+    marginRight: 50,
+    marginLeft: 50,
     width: 330,
   },
   buttonCheckIn: {
@@ -66,11 +71,10 @@ export const styles = StyleSheet.create({
     backgroundColor: "#BEAD8E",
     color: "#FFFFFF",
     textAlign: "center",
+    alignSelf: "center",
     fontWeight: "700",
     letterSpacing: 2.8,
     padding: 20,
-    marginLeft: 70,
-    marginLeft: 70,
     width: 250,
     height: 60,
   },
