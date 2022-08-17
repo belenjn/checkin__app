@@ -4,6 +4,3 @@ Small Hotel Miranda application to check a reservation through the booking's ref
 
  Done with: React Native. 
 
-![Image Text](file:///Users/be/Desktop/ipad1.png)
-![Image Text](file:///Users/be/Desktop/ipad2.png)
-![Image Text](file:///Users/be/Desktop/mobile.png)
