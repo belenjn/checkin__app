@@ -6,7 +6,7 @@ You can start by cloning this repository and using [react-native-rename](https:/
 
 ## Install dependencies
 
-npm install
+`npm install`
 
 Run `npm run ios` or `npm run android` to start your application
 
