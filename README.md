@@ -1,5 +1,5 @@
 # Checkin App
-##  Done with: React Native. 
+##  Done with: React Native
 Small Hotel Miranda application to check a reservation through the booking's reference.
 
 
