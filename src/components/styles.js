@@ -29,8 +29,8 @@ export const styles = StyleSheet.create({
     maxWidth: 900,
   },
   logo: {
-    height: "49%",
-    width: "35%",
+    height: "45%",
+    width: "30%",
     alignSelf: "center",
     marginLeft: "7%",
     marginRight: 30
@@ -82,14 +82,32 @@ export const styles = StyleSheet.create({
   mainContainerInfo: {
     borderColor: "white",
     borderWidth: 1,
-    width: "70%",
+    width: "90%",
     height: "30%",
-    alignSelf: "center"
+    alignSelf: "center",
+    marginBottom: 200
   },
   column: {
     height: "20%",
     borderColor: "white",
-    borderWidth: 1
+    borderWidth: 1,
+    padding: 8
+  },
+  titleInfo:{
+    color: "#FFFFFF",
+    fontWeight: "700",
+    fontSize: 20,
+    letterSpacing: 1.8,
+    textAlign: "center",
+    marginBottom: "5%"
+  },
+  tableText: {
+    color: "#FFFFFF",
+    textAlign: "center",
+    fontWeight: "500",
+    fontSize: 13,
+    letterSpacing: 1.8,
+    marginTop: 10,
   }
 });
 
