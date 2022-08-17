@@ -106,7 +106,7 @@ export const styles = StyleSheet.create({
     fontWeight: "500",
     fontSize: 13,
     letterSpacing: 1.8,
-    marginTop: 10
+    marginTop: 8
   },
   // Checkin styles
   buttonDone: {
