@@ -76,7 +76,7 @@ export const styles = StyleSheet.create({
     letterSpacing: 2.8,
     padding: 20,
     width: 250,
-    height: 60,
+    height: 60
   },
   // Info styles
   mainContainerInfo: {
@@ -107,9 +107,34 @@ export const styles = StyleSheet.create({
     fontWeight: "500",
     fontSize: 13,
     letterSpacing: 1.8,
-    marginTop: 10,
+    marginTop: 10
+  },
+  // Checkin styles
+  buttonDone: {
+    borderWidth: 0,
+    backgroundColor: "#BEAD8E",
+    color: "#FFFFFF",
+    textAlign: "center",
+    alignSelf: "center",
+    fontWeight: "700",
+    letterSpacing: 2.8,
+    padding: 20,
+    width: 250,
+    height: 60,
+    marginTop: "10%"
+  },
+  bookingDetailsText: {
+    backgroundColor: "#FFFFFF",
+    color: "#333333",
+    textAlign: "center",
+    fontWeight: "700",
+    fontSize: 20,
+    letterSpacing: 1.8,
+    marginTop: 10
+  },
+  bookingColumn: {
+    height: "20%",
+    backgroundColor: "#FFFFFF",
+    padding: 5
   }
 });
-
-
-// 20 20 0 20 padding
