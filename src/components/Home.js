@@ -29,7 +29,10 @@ export const Home = () => {
       <View style={styles.containerDarker}></View>
       <View style={styles.container}>
         <View style={styles.formView}>
-          <View>
+          <View style={{
+       
+            marginBottom: 200
+          }}>
             <Text style={styles.formTitle}>Booking Reference</Text>
             <TextInput
               style={styles.formInput}

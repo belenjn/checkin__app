@@ -5,9 +5,9 @@ import { Info } from './src/components/Info';
 
 export default function App() {
   return (
-      //  <Home/>
-      <Checkin/>
-      //  <Info/>
+      <Home/>
+      // <Checkin/>
+      // <Info/>
   );
 }
 

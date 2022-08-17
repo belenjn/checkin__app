@@ -71,12 +71,12 @@ export const styles = StyleSheet.create({
     backgroundColor: "#BEAD8E",
     color: "#FFFFFF",
     textAlign: "center",
-    alignSelf: "center",
     fontWeight: "700",
     letterSpacing: 2.8,
     padding: 20,
     width: 250,
-    height: 60
+    height: 60,
+
   },
   // Info styles
   mainContainerInfo: {
@@ -138,3 +138,4 @@ export const styles = StyleSheet.create({
     padding: 5
   }
 });
+
