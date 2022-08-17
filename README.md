@@ -4,7 +4,7 @@ Small Hotel Miranda application to check a reservation through the booking's ref
 
 
 ## Install dependencies
-You can start by cloning this repository
+You can start by cloning this repository and then:
 
 `npm install`
 
