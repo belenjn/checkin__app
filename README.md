@@ -2,7 +2,7 @@
 ##  Done with: React Native
 Small Hotel Miranda application to check a reservation through the booking's reference.
 
-You can start by cloning this repository and using [react-native-rename](https://github.com/belenjn/checkin__app)
+You can start by cloning this repository and using [react-native-app](https://github.com/belenjn/checkin__app)
 
 ## Install dependencies
 
