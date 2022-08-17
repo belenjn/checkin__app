@@ -1,38 +1,25 @@
 import React from "react";
 import {
-  Image,
   Text,
   TextInput,
   TouchableNativeFeedback,
   View,
 } from "react-native";
+import { Navbar } from "./Navbar";
 import { styles } from "./styles";
 
-
 export const Home = () => {
-
   return (
     <View>
-      <View style={styles.navbar}>
-        <Image
-          style={styles.logo}
-          source={require("../assets/logo-nav.png")}
-        ></Image>
-        <TouchableNativeFeedback>
-          <Text style={styles.button}> Check in</Text>
-        </TouchableNativeFeedback>
-
-        <TouchableNativeFeedback>
-          <Text style={styles.button}>Info</Text>
-        </TouchableNativeFeedback>
-      </View>
+      <Navbar />
       <View style={styles.containerDarker}></View>
       <View style={styles.container}>
         <View style={styles.formView}>
-          <View style={{
-       
-            marginBottom: 200
-          }}>
+          <View
+            style={{
+              marginBottom: 200,
+            }}
+          >
             <Text style={styles.formTitle}>Booking Reference</Text>
             <TextInput
               style={styles.formInput}

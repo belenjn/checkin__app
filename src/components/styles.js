@@ -5,7 +5,6 @@ import { StyleSheet } from "react-native";
 export const styles = StyleSheet.create({
   // Home styles
   containerDarker: {
-    marginTop: Constants.statusBarHeight,
     backgroundColor: "#222222",
     height: 120,
   },
@@ -25,7 +24,7 @@ export const styles = StyleSheet.create({
     justifyContent: "left",
     alignSelf: "center",
     zIndex: 2,
-    marginTop: 100,
+    marginTop: 60,
     maxWidth: 900,
   },
   logo: {
