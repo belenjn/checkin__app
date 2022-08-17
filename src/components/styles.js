@@ -20,7 +20,7 @@ export const styles = StyleSheet.create({
     backgroundColor: "white",
     flexDirection: "row",
     position: "absolute",
-    height: 120,
+    height: 100,
     width: "90%",
     justifyContent: "left",
     alignSelf: "center",
@@ -32,8 +32,8 @@ export const styles = StyleSheet.create({
     height: "49%",
     width: "35%",
     alignSelf: "center",
-    marginLeft: "5%",
-    marginRight: 10
+    marginLeft: "7%",
+    marginRight: 30
   },
   button: {
     color: "black",
