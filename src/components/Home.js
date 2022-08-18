@@ -1,14 +1,17 @@
-import React from "react";
-import {
-  Text,
-  TextInput,
-  TouchableNativeFeedback,
-  View,
-} from "react-native";
+import React, { useEffect, useState } from "react";
+import { Text, TextInput, TouchableNativeFeedback, View } from "react-native";
+import { getBookingReference } from "../getBookingsReference";
 import { Navbar } from "./Navbar";
 import { styles } from "./styles";
 
 export const Home = () => {
+
+  const [bookingReference, setBookingReference] = useState('');
+
+  useEffect(() => {
+   getBookingReference()
+  }, []);
+
   return (
     <View>
       <Navbar />
@@ -28,7 +31,7 @@ export const Home = () => {
             ></TextInput>
           </View>
 
-          <TouchableNativeFeedback>
+          <TouchableNativeFeedback onPress={() => fetchReference()}>
             <Text style={styles.buttonCheckIn}>CHECK IN</Text>
           </TouchableNativeFeedback>
         </View>

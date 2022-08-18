@@ -58,6 +58,7 @@ export const styles = StyleSheet.create({
   formInput: {
     borderBottomWidth: 2,
     borderBottomColor: "#BEAD8E",
+    color: "white",
     alignSelf: "center",
     paddingBottom: 10,
     marginBottom: 50,
