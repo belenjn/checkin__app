@@ -14,7 +14,7 @@ export const Navbar = () => {
       <TouchableNativeFeedback>
         <Text
           style={styles.button}
-          onPress={() => navigation.navigate("Checkin")}
+          onPress={() => navigation.navigate("Home")}
         >
           {" "}
           Check in

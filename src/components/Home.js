@@ -5,12 +5,11 @@ import { Navbar } from "./Navbar";
 import { styles } from "./styles";
 
 export const Home = () => {
+  const [referenceData, setReferenceData] = useState("");
 
-  const [bookingReference, setBookingReference] = useState('');
-
-  useEffect(() => {
-   getBookingReference()
-  }, []);
+  const handleClick = async () => {
+    getBookingReference(referenceData)
+  };
 
   return (
     <View>
@@ -28,10 +27,11 @@ export const Home = () => {
               style={styles.formInput}
               placeholder="AAA0000"
               placeholderTextColor="#686868"
+              onChange={(value) => setReferenceData(value)}
             ></TextInput>
           </View>
 
-          <TouchableNativeFeedback onPress={() => fetchReference()}>
+          <TouchableNativeFeedback onPress={() => handleClick()}>
             <Text style={styles.buttonCheckIn}>CHECK IN</Text>
           </TouchableNativeFeedback>
         </View>
