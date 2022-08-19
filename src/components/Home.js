@@ -4,12 +4,16 @@ import { getBookingReference } from "../getBookingsReference";
 import { Navbar } from "./Navbar";
 import { styles } from "./styles";
 
-export const Home = () => {
+export const Home = ({navigation}) => {
   const [referenceData, setReferenceData] = useState("");
+  const [bookingData, setBookingData] = useState([]);
 
   const handleClick = async () => {
     getBookingReference(referenceData)
+    bookingData.length !== 0 && navigation.navigate('Checkin');
+    
   };
+  
 
   return (
     <View>
@@ -27,7 +31,11 @@ export const Home = () => {
               style={styles.formInput}
               placeholder="AAA0000"
               placeholderTextColor="#686868"
-              onChange={(value) => setReferenceData(value)}
+              value={referenceData}
+              onChangeText={(value) => {
+                setReferenceData(value)
+                setBookingData([value]);
+              }}
             ></TextInput>
           </View>
 

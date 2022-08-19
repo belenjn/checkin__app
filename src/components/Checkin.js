@@ -3,7 +3,7 @@ import { Image, Text, TouchableNativeFeedback, View } from "react-native";
 import { Navbar } from "./Navbar";
 import { styles } from "./styles";
 
-export const Checkin = () => {
+export const Checkin = ({navigation}) => {
   return (
     <View>
    <Navbar/>
@@ -27,7 +27,10 @@ export const Checkin = () => {
           <Text style={styles.tableText}>TOTAL PRICE: €</Text>
         </View>
 
-        <TouchableNativeFeedback>
+        <TouchableNativeFeedback onPress={() => {
+          navigation.navigate('Home');
+    
+        }}>
             <Text style={styles.buttonDone}>DONE</Text>
           </TouchableNativeFeedback>
       </View>
