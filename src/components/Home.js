@@ -10,7 +10,6 @@ export const Home = ({navigation}) => {
 
   const handleClick = async () => {
     getBookingReference(referenceData)
-    // bookingData.length !== 0 && navigation.navigate('Checkin');
     
   };
   
