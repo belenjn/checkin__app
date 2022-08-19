@@ -20,9 +20,9 @@ export const getBookingReference = async (referenceBooking) => {
         arr.push(references[ref]);
       }
 
-      const finalRef = arr.find((ref) => ref.reference === referenceBooking);
-      console.log(finalRef);
-      return finalRef;
+      const booking = arr.find((ref) => ref.reference === referenceBooking);
+      console.log(booking);
+      return booking;
     }
   } catch (err) {
     throw new Error(err);
