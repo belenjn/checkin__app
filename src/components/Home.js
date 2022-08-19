@@ -1,18 +1,28 @@
+import fetch from "cross-fetch";
 import React, { useEffect, useState } from "react";
 import { Text, TextInput, TouchableNativeFeedback, View } from "react-native";
-import { getBookingReference } from "../getBookingsReference";
 import { Navbar } from "./Navbar";
 import { styles } from "./styles";
+import { host } from "../../env";
 
-export const Home = ({navigation}) => {
+export const Home = ({ setBookingData, navigation }) => {
   const [referenceData, setReferenceData] = useState("");
-  const [bookingData, setBookingData] = useState([]);
 
-  const handleClick = () => {
-    getBookingReference(referenceData)
-    
+  const handleClick = async () => {
+    try {
+      const response = await fetch(`${host}/reference/`, {
+        method: "POST",
+        body: JSON.stringify({ reference: referenceData }),
+      });
+      if (response.ok) {
+        const jsonResponse = await response.json();
+        setBookingData(jsonResponse.booking);
+        navigation.navigate("Checkin")
+      }
+    } catch (error) {
+      console.log(error);
+    }
   };
-  
 
   return (
     <View>
@@ -32,13 +42,12 @@ export const Home = ({navigation}) => {
               placeholderTextColor="#686868"
               value={referenceData}
               onChangeText={(value) => {
-                setReferenceData(value)
-                setBookingData([value]);
+                setReferenceData(value);
               }}
             ></TextInput>
           </View>
 
-          <TouchableNativeFeedback onPress={() => handleClick()}>
+          <TouchableNativeFeedback onPress={handleClick}>
             <Text style={styles.buttonCheckIn}>CHECK IN</Text>
           </TouchableNativeFeedback>
         </View>
