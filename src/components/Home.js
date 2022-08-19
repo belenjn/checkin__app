@@ -8,7 +8,7 @@ export const Home = ({navigation}) => {
   const [referenceData, setReferenceData] = useState("");
   const [bookingData, setBookingData] = useState([]);
 
-  const handleClick = async () => {
+  const handleClick = () => {
     getBookingReference(referenceData)
     
   };
