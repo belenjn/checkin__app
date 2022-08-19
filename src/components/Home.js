@@ -1,24 +1,26 @@
 import fetch from "cross-fetch";
 import React, { useEffect, useState } from "react";
-import { Text, TextInput, TouchableNativeFeedback, View } from "react-native";
+import { Alert, Text, TextInput, TouchableNativeFeedback, View } from "react-native";
 import { Navbar } from "./Navbar";
 import { styles } from "./styles";
 import { host } from "../../env";
 
 export const Home = ({ setBookingData, navigation }) => {
   const [referenceData, setReferenceData] = useState("");
+  const [press, setPress] = useState(false);
+
 
   const handleClick = async () => {
     try {
       const response = await fetch(`${host}/reference/`, {
         method: "POST",
-        body: JSON.stringify({ reference: referenceData }),
+        body: JSON.stringify({ reference: referenceData}),
       });
       if (response.ok) {
         const jsonResponse = await response.json();
         setBookingData(jsonResponse.booking);
         navigation.navigate("Checkin")
-      }
+      } 
     } catch (error) {
       console.log(error);
     }
