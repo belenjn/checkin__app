@@ -16,6 +16,7 @@ export const getBookingReference = async (referenceBooking) => {
       const references = jsonResponse.filter((booking) => {
         return booking.reference;
       });
+      
       for (const ref in references) {
         arr.push(references[ref]);
       }
