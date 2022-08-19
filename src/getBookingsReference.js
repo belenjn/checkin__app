@@ -14,22 +14,13 @@ export const getBookingReference = async (referenceBooking) => {
     if (response.ok) {
       const jsonResponse = await response.json();
       const references = jsonResponse.filter((booking) => {
-        if (booking.reference !== undefined && booking.reference !== "") {
-          return booking.reference;
-        } else if (booking.reference === undefined) {
-          Alert.alert("Error", "Reference doesn't exists", [
-            {
-              text: "Try again",
-              onPress:() => console.log('pressed'),
-              style: "cancel",
-            },
-          ]);
-        }
+        return booking.reference;
       });
-      for (const booking in references) {
-        arr.push(references[booking].reference);
+      for (const ref in references) {
+        arr.push(references[ref]);
       }
-      const finalRef = arr.find((ref) => ref === referenceBooking);
+
+      const finalRef = arr.find((ref) => ref.reference === referenceBooking);
       console.log(finalRef);
       return finalRef;
     }
